@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TSSC Student Portal | Student Version</title>
+    <!-- Google Fonts: Inter & Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="loading-screen" class="loading-screen">
+        <div class="loader-content">
+            <div class="loader-logo">
+                <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <h2>TSSC Student Portal</h2>
+            <p>Loading student environment...</p>
+            <div class="spinner"></div>
+        </div>
+    </div>
+
+    <header id="header" class="header">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <div class="logo-icon">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+                <div class="logo-text">
+                    <span class="brand-title">TSSC</span>
+                    <span class="brand-subtitle">Student Portal</span>
+                </div>
+            </a>
+            
+            <nav class="desktop-nav">
+                <ul>
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#notices" class="nav-link">Notices</a></li>
+                    <li><a href="#routine" class="nav-link">Routine</a></li>
+                    <li><a href="#results" class="nav-link">Results</a></li>
+                    <li><a href="#resources" class="nav-link">Resources</a></li>
+                    <li><a href="#events" class="nav-link">Events</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="#results" class="btn-primary-sm"><i class="fa-solid fa-id-card"></i> Portal ID</a>
+                <button id="hamburger-btn" class="hamburger-btn" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="mobile-menu">
+            <div class="mobile-menu-inner">
+                <a href="#home" class="mobile-nav-link"><i class="fa-solid fa-house"></i> Home</a>
+                <a href="#notices" class="mobile-nav-link"><i class="fa-solid fa-bullhorn"></i> Notices</a>
+                <a href="#routine" class="mobile-nav-link"><i class="fa-solid fa-calendar-days"></i> Routine</a>
+                <a href="#results" class="mobile-nav-link"><i class="fa-solid fa-square-poll-vertical"></i> Results</a>
+                <a href="#resources" class="mobile-nav-link"><i class="fa-solid fa-folder-open"></i> Resources</a>
+                <a href="#events" class="mobile-nav-link"><i class="fa-solid fa-calendar-star"></i> Events</a>
+                <a href="#about" class="mobile-nav-link"><i class="fa-solid fa-circle-info"></i> About</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero-section">
+            <div class="hero-bg-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+            <div class="container hero-container">
+                <div class="hero-content reveal-left">
+                    <div class="hero-badge">
+                        <i class="fa-solid fa-bolt"></i> Official Student Hub v2.6
+                    </div>
+                    <h1>Welcome to TSSC<br><span class="highlight">Student Portal</span></h1>
+                    <p>A simple, fast and modern digital space for TSSC students. Access your daily routines, academic notices, results, and learning resources instantly.</p>
+                    <div class="hero-buttons">
+                        <a href="#notices" class="btn-primary"><i class="fa-solid fa-bullhorn"></i> View Notices</a>
+                        <a href="#resources" class="btn-secondary"><i class="fa-solid fa-book-open"></i> Student Resources</a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-num" data-target="2500">0</span>+
+                            <span class="stat-label">Students</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <span class="stat-num" data-target="35">0</span>+
+                            <span class="stat-label">Classes</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <span class="stat-num">24/7</span>
+                            <span class="stat-label">Access</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-visual reveal-right">
+                    <div class="dashboard-preview-card floating-card">
+                        <div class="card-top">
+                            <div class="user-chip">
+                                <div class="avatar"><i class="fa-solid fa-user-graduate"></i></div>
+                                <div>
+                                    <h4>TSSC Scholar</h4>
+                                    <p>Class 10 • Roll: 104</p>
+                                </div>
+                            </div>
+                            <span class="status-badge"><i class="fa-solid fa-circle-check"></i> Active</span>
+                        </div>
+                        <div class="card-widgets">
+                            <div class="widget-row">
+                                <div class="mini-widget">
+                                    <i class="fa-solid fa-calendar-check text-sky"></i>
+                                    <div>
+                                        <small>Attendance</small>
+                                        <strong>94%</strong>
+                                    </div>
+                                </div>
+                                <div class="mini-widget">
+                                    <i class="fa-solid fa-award text-blue"></i>
+                                    <div>
+                                        <small>Latest GPA</small>
+                                        <strong>5.00</strong>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="notice-ticker">
+                                <i class="fa-solid fa-bell text-warning"></i>
+                                <span><strong>Notice:</strong> Mid-Term Examination routine published. Check notices tab.</span>
+                            </div>
+                            <div class="mini-progress-box">
+                                <div class="prog-label">
+                                    <span>Term Syllabus Progress</span>
+                                    <span>78%</span>
+                                </div>
+                                <div class="progress-bar-bg">
+                                    <div class="progress-bar-fill" style="width: 78%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="notices" class="notices-section">
+            <div class="container">
+                <div class="section-header reveal-up">
+                    <span class="section-tag"><i class="fa-solid fa-bullhorn"></i> Announcements</span>
+                    <h2>Latest Notices</h2>
+                    <p>Stay updated with the latest school announcements, exam schedules, and academic events.</p>
+                </div>
+                
+                <div class="notice-filters reveal-up">
+                    <button class="filter-btn active" data-filter="all">All Notices</button>
+                    <button class="filter-btn" data-filter="IMPORTANT">Important</button>
+                    <button class="filter-btn" data-filter="ACADEMIC">Academic</button>
+                    <button class="filter-btn" data-filter="EXAM">Exam</button>
+                    <button class="filter-btn" data-filter="GENERAL">General</button>
+                </div>
+
+                <div id="notices-grid" class="notices-grid">
+                    <!-- Dynamic notices will be injected here via script.js -->
+                </div>
+            </div>
+        </section>
+
+        <section id="routine" class="routine-section">
+            <div class="container">
+                <div class="section-header reveal-up">
+                    <span class="section-tag"><i class="fa-solid fa-calendar-days"></i> Time Table</span>
+                    <h2>Interactive Class Routine</h2>
+                    <p>Select your class below to view the daily lecture schedules and teacher details.</p>
+                </div>
+
+                <div class="class-selector-tabs reveal-up">
+                    <button class="class-tab active" data-class="6">Class 6</button>
+                    <button class="class-tab" data-class="7">Class 7</button>
+                    <button class="class-tab" data-class="8">Class 8</button>
+                    <button class="class-tab" data-class="9">Class 9</button>
+                    <button class="class-tab" data-class="10">Class 10</button>
+                </div>
+
+                <div class="routine-card reveal-up">
+                    <div class="routine-card-header">
+                        <h3 id="routine-title">Routine for Class 6</h3>
+                        <span class="routine-day"><i class="fa-regular fa-calendar"></i> Academic Session 2026</span>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="routine-table">
+                            <thead>
+                                <tr>
+                                    <th>Period</th>
+                                    <th>Time</th>
+                                    <th>Subject</th>
+                                    <th>Teacher</th>
+                                    <th>Room</th>
+                                </tr>
+                            </thead>
+                            <tbody id="routine-table-body">
+                                <!-- Routine rows injected dynamically -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="results" class="results-section">
+            <div class="container">
+                <div class="section-header reveal-up">
+                    <span class="section-tag"><i class="fa-solid fa-square-poll-vertical"></i> Evaluation</span>
+                    <h2>Student Result Center</h2>
+                    <p>Enter your student ID to instantly preview your terminal examination marksheet and GPA.</p>
+                </div>
+
+                <div class="result-box reveal-up">
+                    <div class="result-form-wrapper">
+                        <div class="input-group">
+                            <label for="student-id-input"><i class="fa-solid fa-id-badge"></i> Enter Student ID</label>
+                            <div class="input-with-btn">
+                                <input type="text" id="student-id-input" placeholder="e.g. 104, 201, 305, 412..." autocomplete="off">
+                                <button id="check-result-btn" class="btn-primary">Check Result</button>
+                            </div>
+                            <small class="hint-text">💡 Try demo IDs like <strong>101</strong>, <strong>102</strong>, <strong>103</strong>, or <strong>104</strong></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="resources" class="resources-section">
+            <div class="container">
+                <div class="section-header reveal-up">
+                    <span class="section-tag"><i class="fa-solid fa-folder-open"></i> Utilities</span>
+                    <h2>Student Resources</h2>
+                    <p>Quick access shortcuts to essential portals, documents, and student support services.</p>
+                </div>
+
+                <div class="resources-grid">
+                    <!-- Resource 1 -->
+                    <div class="resource-card reveal-up" onclick="showToast('Opening Study Materials repository...')">
+                        <div class="res-icon bg-sky"><i class="fa-solid fa-book-bookmark"></i></div>
+                        <h3>Study Materials</h3>
+                        <p>Lecture notes, syllabus copies, and PDF guides by department.</p>
+                        <span class="res-link">Access Files <i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                    <!-- Resource 2 -->
+                    <div class="resource-card reveal-up" onclick="showToast('Loading digital attendance logs...')">
+                        <div class="res-icon bg-blue"><i class="fa-solid fa-clipboard-user"></i></div>
+                        <h3>Attendance</h3>
+                        <p>Track your daily attendance percentage and monthly records.</p>
+                        <span class="res-link">View Logs <i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                    <!-- Resource 3 -->
+                    <div class="resource-card reveal-up" onclick="showToast('Exam schedule downloaded/loaded.')">
+                        <div class="res-icon bg-indigo"><i class="fa-solid fa-calendar-check"></i></div>
+                        <h3>Exam Schedule</h3>
+                        <p>Datesheets, seating plans, and seat arrangement details.</p>
+                        <span class="res-link">Check Routine <i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                    <!-- Resource 4 -->
+                    <div class="resource-card reveal-up" onclick="showToast('Digital ID Card generated.')">
+                        <div class="res-icon bg-teal"><i class="fa-solid fa-address-card"></i></div>
+                        <h3>Student ID</h3>
+                        <p>Digital verification card with barcode and student data.</p>
+                        <span class="res-link">View ID Card <i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                    <!-- Resource 5 -->
+                    <div class="resource-card reveal-up" onclick="showToast('Connecting to TSSC E-Library...')">
+                        <div class="res-icon bg-purple"><i class="fa-solid fa-book-open-reader"></i></div>
+                        <h3>Library</h3>
+                        <p>Browse available library books, return dates, and e-books.</p>
+                        <span class="res-link">Open Library <i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                    <!-- Resource 6 -->
+                    <div class="resource-card reveal-up" onclick="showToast('Help Desk ticket system opened.')">
+                        <div class="res-icon bg-orange"><i class="fa-solid fa-headset"></i></div>
+                        <h3>Help Desk</h3>
+                        <p>Submit queries or technical support requests to administration.</p>
+                        <span class="res-link">Get Support <i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                    <!-- Resource 7 -->
+                    <div class="resource-card reveal-up" onclick="showToast('Academic calendar 2026 displayed.')">
+                        <div class="res-icon bg-cyan"><i class="fa-solid fa-calendar-days"></i></div>
+                        <h3>Academic Calendar</h3>
+                        <p>Yearly schedule including holidays, term breaks, and events.</p>
+                        <span class="res-link">View Calendar <i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                    <!-- Resource 8 -->
+                    <div class="resource-card reveal-up" onclick="showToast('Notice board redirected.')">
+                        <div class="res-icon bg-rose"><i class="fa-solid fa-bullhorn"></i></div>
+                        <h3>Notice Board</h3>
+                        <p>Archive of all official circulars and emergency notices.</p>
+                        <span class="res-link">All Notices <i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="events" class="events-section">
+            <div class="container">
+                <div class="section-header reveal-up">
+                    <span class="section-tag"><i class="fa-solid fa-calendar-star"></i> Activities</span>
+                    <h2>Upcoming Events</h2>
+                    <p>Mark your calendars for upcoming sports competitions, fairs, and cultural celebrations.</p>
+                </div>
+
+                <div id="events-grid" class="events-grid">
+                    <!-- Events populated via script.js -->
+                </div>
+            </div>
+        </section>
+
+        <section id="dashboard-preview" class="dashboard-preview-section">
+            <div class="container">
+                <div class="section-header reveal-up">
+                    <span class="section-tag"><i class="fa-solid fa-chart-pie"></i> Student Preview</span>
+                    <h2>Interactive Student Dashboard</h2>
+                    <p>Experience a preview of the personalized student workspace designed for efficiency.</p>
+                </div>
+
+                <div class="dashboard-showcase reveal-up">
+                    <div class="dash-sidebar">
+                        <div class="dash-profile">
+                            <div class="avatar-large">
+                                <i class="fa-solid fa-user-graduate"></i>
+                            </div>
+                            <h3>Student</h3>
+                            <span class="badge-class">Class 8</span>
+                            <p class="dash-id">ID: #TSSC-8042</p>
+                        </div>
+                        <div class="dash-menu-items">
+                            <a href="#dashboard-preview" class="active"><i class="fa-solid fa-house"></i> Overview</a>
+                            <a href="#dashboard-preview" onclick="showToast('Assignments module demo.')"><i class="fa-solid fa-book"></i> Assignments (4)</a>
+                            <a href="#dashboard-preview" onclick="showToast('Fees status: Cleared.')"><i class="fa-solid fa-wallet"></i> Tuition Fees</a>
+                            <a href="#dashboard-preview" onclick="showToast('Report card downloaded.')"><i class="fa-solid fa-file-arrow-down"></i> Reports</a>
+                        </div>
+                    </div>
+                    
+                    <div class="dash-main-panel">
+                        <div class="dash-top-bar">
+                            <h3>Welcome Back, Scholar!</h3>
+                            <span class="date-badge"><i class="fa-regular fa-clock"></i> Today, Active Session</span>
+                        </div>
+                        
+                        <div class="dash-metric-cards">
+                            <div class="d-card">
+                                <div class="d-icon bg-sky-light text-sky"><i class="fa-solid fa-user-check"></i></div>
+                                <div>
+                                    <small>Attendance</small>
+                                    <h4>92%</h4>
+                                </div>
+                            </div>
+                            <div class="d-card">
+                                <div class="d-icon bg-blue-light text-blue"><i class="fa-solid fa-clock-rotate-left"></i></div>
+                                <div>
+                                    <small>Upcoming Exam</small>
+                                    <h4>15 Oct</h4>
+                                </div>
+                            </div>
+                            <div class="d-card">
+                                <div class="d-icon bg-orange-light text-orange"><i class="fa-solid fa-bell"></i></div>
+                                <div>
+                                    <small>Notices</small>
+                                    <h4>3 New</h4>
+                                </div>
+                            </div>
+                            <div class="d-card">
+                                <div class="d-icon bg-teal-light text-teal"><i class="fa-solid fa-list-check"></i></div>
+                                <div>
+                                    <small>Assignments</small>
+                                    <h4>4 Pending</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="dash-charts-row">
+                            <div class="chart-box">
+                                <h4>Academic Progress</h4>
+                                <p class="text-muted text-sm">Subject-wise performance metrics</p>
+                                <div class="prog-bars-container">
+                                    <div class="prog-item">
+                                        <div class="prog-info"><span>Mathematics</span><span>95%</span></div>
+                                        <div class="bar-bg"><div class="bar-fill" style="width: 95%;"></div></div>
+                                    </div>
+                                    <div class="prog-item">
+                                        <div class="prog-info"><span>English</span><span>88%</span></div>
+                                        <div class="bar-bg"><div class="bar-fill" style="width: 88%;"></div></div>
+                                    </div>
+                                    <div class="prog-item">
+                                        <div class="prog-info"><span>Science</span><span>92%</span></div>
+                                        <div class="bar-bg"><div class="bar-fill" style="width: 92%;"></div></div>
+                                    </div>
+                                    <div class="prog-item">
+                                        <div class="prog-info"><span>ICT</span><span>96%</span></div>
+                                        <div class="bar-bg"><div class="bar-fill" style="width: 96%;"></div></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="quick-tasks-box">
+                                <h4>Quick Actions</h4>
+                                <div class="task-action-list">
+                                    <button class="task-action-btn" onclick="showToast('Fee receipt generated.')"><i class="fa-solid fa-receipt text-sky"></i> Download Fee Receipt</button>
+                                    <button class="task-action-btn" onclick="showToast('Leave application form submitted.')"><i class="fa-solid fa-envelope-open-text text-blue"></i> Apply for Leave</button>
+                                    <button class="task-action-btn" onclick="showToast('Subject choice form opened.')"><i class="fa-solid fa-book-atlas text-teal"></i> Subject Selection</button>
+                                    <button class="task-action-btn" onclick="showToast('Teacher contact list loaded.')"><i class="fa-solid fa-address-book text-indigo"></i> Teacher Directory</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-content reveal-left">
+                        <span class="section-tag"><i class="fa-solid fa-circle-info"></i> About TSSC</span>
+                        <h2>About TSSC Student Portal</h2>
+                        <p class="lead-text">TSSC Student Portal is a student-focused digital interface designed to make everyday school information easier to access.</p>
+                        <p>It provides quick, hassle-free access to daily class routines, official notices, terminal results, study resources, and school events in one unified, responsive workspace.</p>
+                        
+                        <div class="about-features-list">
+                            <div class="feat-badge"><i class="fa-solid fa-check"></i> Fast Notice Delivery</div>
+                            <div class="feat-badge"><i class="fa-solid fa-check"></i> Interactive Class Routine</div>
+                            <div class="feat-badge"><i class="fa-solid fa-check"></i> Student Result Checker</div>
+                            <div class="feat-badge"><i class="fa-solid fa-check"></i> Mobile Optimized Experience</div>
+                        </div>
+
+                        <div class="disclaimer-box">
+                            <i class="fa-solid fa-circle-exclamation text-sky"></i>
+                            <p><strong>Note:</strong> This is a student-version demo interface inspired by TSSC (The Scholars School & College). It serves as a modern front-end concept and portal showcase.</p>
+                        </div>
+                    </div>
+
+                    <div class="about-visual reveal-right">
+                        <div class="about-card-banner">
+                            <div class="banner-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                            <h3>Excellence in Education</h3>
+                            <p>Empowering scholars with digital tools for modern academic success.</p>
+                            <div class="banner-stats-row">
+                                <div>
+                                    <strong>100%</strong>
+                                    <small>Dedication</small>
+                                </div>
+                                <div>
+                                    <strong>Fast</strong>
+                                    <small>Performance</small>
+                                </div>
+                                <div>
+                                    <strong>Modern</strong>
+                                    <small>UI/UX</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="result-modal" class="modal-backdrop">
+        <div class="modal-card">
+            <div class="modal-header">
+                <div class="modal-title-area">
+                    <i class="fa-solid fa-award text-sky"></i>
+                    <div>
+                        <h3>Terminal Examination Result</h3>
+                        <span class="demo-tag">DEMO DATA</span>
+                    </div>
+                </div>
+                <button class="modal-close" id="modal-close-btn"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            
+            <div class="modal-body" id="modal-result-content">
+                <!-- Dynamically filled by script.js -->
+            </div>
+
+            <div class="modal-footer">
+                <button class="btn-secondary" id="modal-print-btn" onclick="showToast('Printing Marksheet...')"><i class="fa-solid fa-print"></i> Print Result</button>
+                <button class="btn-primary" id="modal-ok-btn">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="notice-modal" class="modal-backdrop">
+        <div class="modal-card notice-modal-card">
+            <div class="modal-header">
+                <div class="modal-title-area">
+                    <i class="fa-solid fa-bullhorn text-sky"></i>
+                    <div>
+                        <h3 id="modal-notice-title">Notice Title</h3>
+                        <span id="modal-notice-date" class="demo-tag">Date</span>
+                    </div>
+                </div>
+                <button class="modal-close" id="notice-modal-close-btn"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="modal-body" id="modal-notice-body">
+                <!-- Filled dynamically -->
+            </div>
+            <div class="modal-footer">
+                <button class="btn-primary" id="notice-modal-ok-btn">Close Notice</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="toast-container" class="toast-container"></div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-brand">
+                        <div class="logo-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                        <div>
+                            <h4>TSSC Student Portal</h4>
+                            <p class="footer-sub">Student Version</p>
+                        </div>
+                    </div>
+                    <p class="footer-desc">A simple, fast and modern digital space for TSSC students to access notices, routines, and resources.</p>
+                    <div class="social-links">
+                        <a href="#home" onclick="showToast('Redirecting to Facebook...')"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#home" onclick="showToast('Redirecting to YouTube...')"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#home" onclick="showToast('Redirecting to LinkedIn...')"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#home" onclick="showToast('Opening Telegram channel...')"><i class="fa-brands fa-telegram"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home"><i class="fa-solid fa-chevron-right"></i> Home</a></li>
+                        <li><a href="#notices"><i class="fa-solid fa-chevron-right"></i> Notices</a></li>
+                        <li><a href="#routine"><i class="fa-solid fa-chevron-right"></i> Class Routine</a></li>
+                        <li><a href="#results"><i class="fa-solid fa-chevron-right"></i> Result Center</a></li>
+                        <li><a href="#resources"><i class="fa-solid fa-chevron-right"></i> Study Resources</a></li>
+                        <li><a href="#events"><i class="fa-solid fa-chevron-right"></i> Upcoming Events</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Student Portals</h4>
+                    <ul class="footer-links">
+                        <li><a href="#resources" onclick="showToast('Portal: E-Library')"><i class="fa-solid fa-chevron-right"></i> E-Library Portal</a></li>
+                        <li><a href="#resources" onclick="showToast('Portal: Attendance Tracker')"><i class="fa-solid fa-chevron-right"></i> Attendance System</a></li>
+                        <li><a href="#resources" onclick="showToast('Portal: Assignment Hub')"><i class="fa-solid fa-chevron-right"></i> Assignment Submission</a></li>
+                        <li><a href="#resources" onclick="showToast('Portal: Fee Portal')"><i class="fa-solid fa-chevron-right"></i> Online Fee Payment</a></li>
+                        <li><a href="#about" onclick="showToast('FAQ section opened')"><i class="fa-solid fa-chevron-right"></i> Student FAQs</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Contact & Info</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fa-solid fa-location-dot"></i> The Scholars School & College, Campus Road</li>
+                        <li><i class="fa-solid fa-envelope"></i> studentportal@thescholars.edu.bd</li>
+                        <li><i class="fa-solid fa-phone"></i> +880 9600-000000</li>
+                        <li><i class="fa-solid fa-clock"></i> Sat - Thu: 8:00 AM - 4:00 PM</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p id="copyright-text">&copy; 2026 TSSC Student Portal. All rights reserved.</p>
+                <p class="footer-tagline">Student-focused web experience • Built with HTML5, CSS3 & Vanilla JS</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
